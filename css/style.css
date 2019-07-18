@@ -38,6 +38,14 @@ nav {
     text-decoration: underline;
 }
 
+.envelope {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    color: white;
+}
+
 .phone,
 .envelope,
 .nav-btn,
@@ -77,8 +85,7 @@ nav {
 
 .phone,
 .nav-btn,
-.nav-link,
-.envelope {
+.nav-link {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -98,8 +105,7 @@ nav {
     height: calc(100vh - 100px);
     background: url('./../img/s1-background.png') no-repeat right, linear-gradient(to bottom, #192783, #0557DA);
     padding-top: 72px;
-    margin-bottom: 48px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 200px), 420px calc(100vh - 110px), 0 calc(100vh - 200px));;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 224px), 270px calc(100vh - 152px), 0 calc(100vh - 220px));
 }
 
 .section-first-wrapper {
@@ -177,6 +183,7 @@ h3 {
     height: 448px;
     background: white;
     width: 100%;
+    margin-bottom: 48px;
 }
 
 .last-advantages {
@@ -203,10 +210,6 @@ h3 {
     right: 54px;
 }
 
-.advantages-wrapper li {
-    list-style: none;
-}
-
 .advantages-wrapper li,
 .section-second-description {
     color: white;
@@ -225,7 +228,7 @@ h3 {
 }
 
 .section-second-description {
-    width: 408px;
+    width: 280px;  /*По дизайну ширина блока 408px, но есть перенос строки*/
 }
 
 .btn-section-second {
@@ -246,15 +249,15 @@ h3 {
 .section-third-wrapper {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 175px;
+    flex-direction: column;
 }
 
 .section-third-wrapper::before {
     content: "";
     position: absolute;
-    padding-bottom: 190px;
+    padding-bottom: 279px;
     background: url(./../img/s3-background.png) no-repeat right, linear-gradient(to bottom, #192783, #0557DA);
-    clip-path: polygon(0 0, 420px 80px, 100% 0, 100% 1048px, 420px 1158px, 0 1048px, 0 100%);
+    clip-path: polygon(0 0, 420px 80px, 100% 0, 100% 1178px, 420px 1247px, 0 1178px, 0 100%);
     width: 100%;
     height: 100vh;
 }
@@ -406,7 +409,7 @@ h3 {
 }
 
 .section-fourth {
-    margin-bottom: 64px;
+    margin: 175px 0 48px 0;
 }
 
 .section-fourth-wrapper {
@@ -416,10 +419,6 @@ h3 {
     justify-content: space-between;
     background: white;
     width: 1168px;
-}
-
-.wrapper-title {
-    justify-content: flex-start;
 }
 
 .title-p-t {
@@ -528,6 +527,10 @@ h3 {
     width: 1424px;
 }
 
+.w-h2 {
+    width: 1168px;
+}
+
 .section-fifth-toggle-left,
 .section-fifth-toggle-right {
     width: 48px;
@@ -535,6 +538,18 @@ h3 {
     cursor: pointer;
     border: 0;
     font-size: 37px;
+    position: absolute;
+    z-index: 99;
+}
+
+.section-fifth-toggle-left {
+    left: 20px;
+    top: 50%;
+}
+
+.section-fifth-toggle-right {
+    right: 20px;
+    top: 50%;
 }
 
 .section-fifth-toggle {
@@ -570,7 +585,7 @@ h3 {
 .section-sixth-wrapper::before {
     content: "";
     position: absolute;
-    padding-bottom: 64px;
+    padding-bottom: 75px;
     background: #E7EFFA;
     clip-path: polygon(0 100px, 420px 190px, 100% 100px, 100% 100%, 0 100%);
     width: 100%;
@@ -662,6 +677,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 48px;
+    position: relative;
 }
 
 .seventh-title {
@@ -682,11 +698,11 @@ h3 {
     content: "";
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 640px;
     background: #E7EFFA;
     display: flex;
     flex-direction: column;
-    clip-path: polygon(0 0, 100% 0, 100% 420px, 420px 600px, 0 500px);
+    clip-path: polygon(0 0, 100% 0, 100% 500px, 420px 600px, 0 500px);
     align-items: center;
 }
 
@@ -701,6 +717,11 @@ h3 {
     width: 1168px;
     color: white;
     margin: 0 auto;
+}
+
+.seventh-test {
+    display: flex;
+    flex-direction: column;
 }
 
 .section-seventh-name {
@@ -821,6 +842,10 @@ h3 {
     margin-top: 48px;
 }
 
+.footer-info-group {
+    display: flex;
+}
+
 .footer-copyright {
     color: #373737;
     display: flex;
@@ -911,12 +936,26 @@ h3 {
     .section-third-wrapper {
         margin-bottom: 76px;
     }
-    .section-fifth-wrapper {
-        width: 1163px;
+    .section-third-wrapper::before {
+        clip-path: polygon(0 30px, 304px 90px, 100% 30px, 100% 1124px, 304px 1206px, 0 1124px, 0 100%);
+        padding-bottom: 375px;
     }
-    /*.partner:last-child {
-        visibility: hidden;
-    }*/
+    .section-fourth {
+        margin-top: 131px;
+    }
+    .section-fifth-wrapper {
+        width: 1193px;
+        justify-content: space-between;
+    }
+    .section-sixth-wrapper {
+        margin-top: 64px;
+    }
+    .partner:last-child {
+      display: none;
+    }
+    .title-p-t{
+        padding-top: 68px;
+    }
     .footer-wrapper {
         padding: 32px 48px 30px 48px;
     }
@@ -947,6 +986,10 @@ h3 {
         font-size: 14px;
         line-height: 20px;
     }
+    .icon-phone {
+        font-size: 20px;
+        text-decoration: none;
+    }
     .phone {
         display: none;
     }
@@ -955,6 +998,23 @@ h3 {
     }
     .nav li {
         margin-right: 24px;
+    }
+    .section-first-wrapper {
+        margin: 216px 0 0 120px;
+    }
+    h2,
+    h3 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .fourth-right-side {
+        right: 0;
+    }
+    .partner:last-child {
+        display: none;
+    }
+    .seventh-title {
+    width: 848px;
     }
     .section-second-wrapper {
         width: 848px;
@@ -1032,7 +1092,8 @@ h3 {
         height: 42px;
     }
     .section-third-wrapper::before {
-        padding-bottom: 0;
+        clip-path: polygon(0 30px, 185px 80px, 100% 20px, 100% 904px, 180px 995px, 0 882px, 0 100%);
+        /*clip-path: polygon(0 30px, 185px 80px, 100% 20px, 100% 1177px, 420px 1247px, 0 1178px, 0 100%);*/
     }
     .section-fourth {
         width: 100%;
@@ -1062,6 +1123,13 @@ h3 {
     }
     .section-fifth-wrapper {
         width: 1024px;
+        justify-content: space-between;
+    }
+    .partner:last-child {
+        display: none;
+    }
+    .w-h2 {
+        width: 848px;
     }
     .partner {
      height: 103px;
@@ -1072,9 +1140,13 @@ h3 {
         height: 40px;
         font-size: 24px;
     }
-
+    .sixth-title {
+        width: 848px;
+        margin: 0 auto;
+    }
     .section-sixth {
         width: 848px;
+        margin: 0 auto;
     }
     .section-sixth-advantages {
         width: 272px;
@@ -1087,12 +1159,15 @@ h3 {
         height: 52px;
         margin: 38px 0 56px 0;
     }
-    .section-seventh-wrapper {
+    .section-seventh-general {
         width: 848px;
-        height: 540px;
     }
-    .section-seventh {
-        padding-bottom: 64px;
+    .section-seventh-wrapper {
+        margin-bottom: 64px;
+    }
+    .section-seventh::before {
+        clip-path: polygon(0 0, 100% 0, 100% 550px, 420px 665px, 0 580px);
+
     }
     .section-eight {
         width: 848px;
@@ -1108,9 +1183,11 @@ h3 {
         padding: 32px 40px;
     }
     .footer-wrapper .logo {
-        width: 213px;
-        height: 48px;
+        width: 224px;
         margin-right: 26px;
+    }
+    .footer-copyright {
+        padding: 0 40px;
     }
     .our-address {
         width: 384px;
@@ -1121,6 +1198,10 @@ h3 {
     .information {
         width: 224px;
         height: 72px;
+    }
+    .footer-info-group {
+        flex-direction: column;
+        justify-content: space-between;
     }
 
 }
@@ -1155,6 +1236,7 @@ h3 {
     .right-side {
         display: none;
     }
+
 }
 
 
