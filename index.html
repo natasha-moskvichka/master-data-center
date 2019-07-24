@@ -46,6 +46,30 @@
         </a>
 
     </nav>
+
+    <section class="modal">
+        <button class="close" type="button">
+            <span class="icon-close"></span>
+        </button>
+        <ul class="modal-list">
+            <li>
+                <a href="#">Продукты</a>
+            </li>
+            <li>
+                <a href="#">Преимущества</a>
+            </li>
+            <li>
+                <a href="#">Особенности</a>
+            </li>
+            <li>
+                <a href="#">Сопровождение</a>
+            </li>
+            <li>
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+    </section>
+
 </header>
 
 <!--Master ЦОД-->
@@ -371,9 +395,21 @@
         <div class="footer-responsive-wrapper">
             <div class="footer-info-group">
                 <div class="our-address">
-                    <span>Телефон: +7(495)989-22-49 (многоканальный)</span>
-                    <span>E-mail: info@insat.ru</span>
-                    <span>Адрес: г. Москва, ул. Марашал Бирюзова, 1к3</span>
+                    <div class="footer-w-320"> <!--ДИВ ДЛЯ ТОГО, ЧТОБЫ НА ШИРИНЕ 320 ПОЯВИЛИСЬ ИКОНКИИ ЛЕГЧЕМ ИХ СТИЛИЗОВАТЬ-->
+                        <span class="icon-footer-phone"></span>
+                        <span class="footer-phone">Телефон: +7(495) 989-22-49 (многоканальный)</span>
+                    </div>
+
+                    <div class="footer-w-320">
+                        <span class="icon-footer-envelope"></span>
+                        <span class="footer-mail">E-mail: info@insat.ru</span>
+                    </div>
+
+                    <div class="footer-w-320">
+                        <span class="icon-point"></span>
+                        <span class="footer-address">Адрес: г. Москва, ул. Марашал Бирюзова, 1, к.3</span>
+                    </div>
+
                 </div>
                 <div class="information">
                     <a href="#">Режим работы</a>
@@ -396,7 +432,7 @@
                         <span class="icon-footer-social-inst"></span>
                     </a>
                 </div>
-                <div class="footer-btn-group">
+                <div class=" footer-btn-group">
                     <button class="btn-footer" type="button">Задать вопрос</button>
                 </div>
             </div>
