@@ -24,6 +24,32 @@ nav {
 
 }
 
+h1 {
+    color: #4AB7FF;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin-bottom: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 52px;
+    color: #7D7D7D;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 52px;
+    color: white;
+    margin-bottom: 16px;
+}
+
 .nav {
     display: flex;
 }
@@ -64,7 +90,12 @@ nav {
     display: none;
 }
 
+.icon-phone {
+    font-size: 18px;
+}
+
 .envelope,
+.icon-phone,
 .icon-social {
     text-decoration: none;
 }
@@ -77,7 +108,6 @@ nav {
 .nav li:last-child {
     margin-right: 0;
 }
-
 
 .nav-btn {
     width: 216px;
@@ -118,14 +148,6 @@ nav {
     margin: 216px 0 0 248px;
 }
 
-h1 {
-    color: #4AB7FF;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 80px;
-    margin-bottom: 16px;
-}
-
 .section-first-description {
     font-family: Open Sans, sans-serif;
     font-style: normal;
@@ -136,6 +158,8 @@ h1 {
     color: white;
 }
 
+/*---Преимущества от внедрения---*/
+
 .section-second-wrapper,
 .s-2-wrapper {
     width: 1168px;
@@ -143,24 +167,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-h2 {
-    margin-bottom: 48px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 52px;
-    color: #7D7D7D;
-}
-
-h3 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 52px;
-    color: white;
-    margin-bottom: 16px;
 }
 
 .section-second-advantages {
@@ -178,7 +184,7 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 400px;
-    white-space: nowrap;
+   /* white-space: nowrap;*/
 }
 
 .advantages-wrapper ul {
@@ -257,6 +263,8 @@ h3 {
     cursor: pointer;
     margin-top: 32px;
 }
+
+/*---Особенности MasterЦОД---*/
 
 .section-third-wrapper {
     display: flex;
@@ -434,7 +442,7 @@ h3 {
     margin-left: 35px;
 }
 
-
+/*---Почему мы?---*/
 .section-fourth {
     margin: 175px 0 48px 0;
 }
@@ -538,6 +546,8 @@ h3 {
     margin: 0 0 16px 0;
 }
 
+/*---Нам доверяют---*/
+
 .section-fifth {
     width: 100%;
     display: flex;
@@ -607,17 +617,6 @@ h3 {
     top: 50%;
 }
 
-/*.section-fifth-toggle {
-    background: white;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border: 0;
-    font-size: 37px;
-    position: absolute;
-    color: #4AB7FF;
-}*/
-
 .section-seventh-toggle {
     background: #E7EFFA;
     color: #4AB7FF;
@@ -635,6 +634,8 @@ h3 {
 .partner img {
     width: 100%;
 }
+
+/*---Внедрения---*/
 
 .section-sixth-wrapper {
     display: flex;
@@ -733,6 +734,8 @@ h3 {
     width: 100px;
     height: 100px;
 }
+
+/*---Что о нас говорят клиенты---*/
 
 .section-seventh-wrapper {
     display: flex;
@@ -855,6 +858,8 @@ h3 {
     visibility: hidden;
 }
 
+/*---Остались вопросы?---*/
+
 .section-eight {
     background: url(./../img/s2-background.png) no-repeat, linear-gradient(to bottom right, #0B59D0, #4AB7FF);
     height: 320px;
@@ -893,6 +898,8 @@ h3 {
     cursor: pointer;
     margin-top: 32px;
 }
+
+/*---Footer---*/
 
 .footer-wrapper {
     display: flex;
@@ -995,6 +1002,9 @@ h3 {
     text-decoration: none;
     color: #373737;
     margin-left: 32px;
+}
+.footer-visible-w-320 {
+    display: none;
 }
 
 /*---MODAL---*/
@@ -1117,6 +1127,9 @@ h3 {
 
     .footer-copyright {
         padding: 0 40px;
+    }
+    .information-responsive-hidden {
+        display: none;
     }
 }
 
@@ -1429,6 +1442,12 @@ h3 {
 
     .fourth-last-advantages {
         flex: 0 0 848px;
+    }
+    .footer-visible-w-320 {
+        display: none;
+    }
+    .information-responsive-hidden {
+        display: none;
     }
 }
 
@@ -1825,7 +1844,8 @@ h3 {
         justify-content: space-between;
     }
 
-    .information-responsive a {
+    .information-responsive a,
+    .information-responsive-hidden a{
         color: white;
         text-decoration: none;
         font-family: Open Sans, sans-serif;
@@ -1860,6 +1880,12 @@ h3 {
         align-items: center;
         justify-content: space-between;
     }
+    .footer-visible-w-320 {
+        display: none;
+    }
+    .information-responsive-hidden {
+        display: none;
+    }
 }
 
 
@@ -1882,19 +1908,19 @@ h3 {
 
     .phone,
     .nav,
-    .nav-btn {
-        display: none;
-    }
-
+    .nav-btn,
     .icon-phone,
-    .icon-menu {
-        display: block;
+    .icon-menu,
+    .envelope {
+        display: none;
     }
 
     .section-first {
         display: flex;
         flex-direction: column;
         align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 190px), 70px calc(100vh - 150px), 0 calc(100vh - 190px));
+
     }
 
     .section-first-wrapper {
@@ -1910,6 +1936,9 @@ h3 {
     h3 {
         font-size: 32px;
         line-height: 48px;
+    }
+    h2 {
+        margin: 0 auto;
     }
 
     .s-2-wrapper {
@@ -2004,6 +2033,10 @@ h3 {
         justify-content: space-between;
     }
 
+    .advantages-wrapper ul {
+        padding-left: 0;
+    }
+
     .s-2-list {
         text-align: center;
     }
@@ -2023,13 +2056,6 @@ h3 {
         line-height: 32px;
         word-break: break-word;
     }
-
-    /*
-
-    .section-third-advantages:nth-child(6) {
-        margin-bottom: 48px;
-    }
-    */
     .section-third-last-advantages {
         width: 320px;
         height: 456px;
@@ -2112,8 +2138,9 @@ h3 {
     }
 
     .section-third-wrapper::before {
-        padding-bottom: 962px;
-        clip-path: polygon(0 80px, 185px 130px, 100% 55px, 100% 100%, 0 100%);
+        padding-bottom: 1340px;
+    clip-path: polygon(0 100px, 70px 130px, 100% 70px, 100% 100%, 0 100%);
+
     }
 
     .section-fourth {
@@ -2193,6 +2220,7 @@ h3 {
 
     .partner {
         width: 100%;
+        padding-right: 0;
     }
 
     .section-fifth-toggle-left {
@@ -2237,8 +2265,8 @@ h3 {
 
     .section-sixth-description {
         width: 320px;
-        height: 586px;
         padding: 56px 8px 30px;
+        text-align: center;
     }
 
     .icon-partner-one,
@@ -2285,6 +2313,7 @@ h3 {
 
     .section-seventh-description {
         width: 310px;
+        height: 192px;
     }
 
     .section-seventh-pagination {
@@ -2293,6 +2322,10 @@ h3 {
 
     .section-seventh-toggle {
         display: none;
+    }
+
+    .section-seventh-title-partner {
+        overflow-wrap: break-word;
     }
 
     .section-eight {
@@ -2328,42 +2361,60 @@ h3 {
     .footer-wrapper .logo {
         width: 144px;
         height: 34px;
-        margin-right: 26px;
     }
 
     .footer-copyright {
+        justify-content: left;
+        align-items: start;
+        padding: 10px 8px;
         height: 128px;
         flex-direction: column;
-        padding: 0;
+    }
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+    .footer-info a {
+        margin-left: 0;
+        padding: 9px 0;
     }
 
+    .footer-info span {
+        padding: 9px 0;
+    }
+
+    .footer-hidden-w-320 {
+        display: none;
+    }
     .our-address {
-        width: 384px;
+        width: 275px;
         height: 118px;
         font-size: 12px;
         line-height: 16px;
         justify-content: space-around;
         margin-bottom: 32px;
-        padding-left: 24px;
     }
 
-    .information {
-        display: none;
-
-    }
-
+    .information,
     .information-responsive {
+        display: none;
+    }
+
+    .information-responsive-hidden {
         height: 118px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 32px;
     }
 
     .footer-responsive-wrapper {
         flex-direction: column;
+        padding-left: 24px;
     }
 
-    .information-responsive a {
+    .information-responsive a,
+    .information-responsive-hidden a{
         color: white;
         text-decoration: none;
         font-family: Open Sans, sans-serif;
@@ -2398,8 +2449,9 @@ h3 {
     }
 
     .social {
-        width: 304px;
+        width: 260px;
         align-items: center;
+        order: 3;
     }
 
     .footer-icon-group {
