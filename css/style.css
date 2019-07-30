@@ -85,6 +85,14 @@ h3 {
     margin-left: 16px;
 }
 
+.nav-btn:hover {
+    background: linear-gradient(to right, #0B59D0, #4AB7FF);
+}
+
+.nav-btn:active {
+    background: linear-gradient(to bottom, #192783, #0557DA);
+}
+
 .icon-phone,
 .icon-menu {
     display: none;
@@ -117,6 +125,7 @@ h3 {
     align-items: center;
     justify-content: center;
     border: none;
+    cursor: pointer;
 }
 
 .phone,
@@ -174,7 +183,19 @@ h3 {
     height: 400px;
     background: linear-gradient(to bottom right, #0B59D0, #4AB7FF);
     padding: 56px 32px;
+    cursor: pointer;
 }
+
+.section-second-advantages:hover  {
+    background: linear-gradient(to bottom, #192783, #0557DA);
+
+}
+
+.section-second-advantages:hover .advantages-wrapper li:nth-child(n+3),
+.section-second-advantages:hover .advantages-wrapper li:nth-child(n+4) {
+    opacity: 1;
+    color: white;
+   }
 
 .section-second-advantages:nth-child(1) {
     margin-bottom: 16px;
@@ -231,10 +252,6 @@ h3 {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-}
-
-.advantages-wrapper li:nth-child(n+3) {
-    opacity: .5;
 }
 
 .advantages-wrapper li:nth-child(n+4) {
@@ -305,6 +322,23 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.section-third-advantages h3 {
+    color: #262626;
+}
+
+.s-3-more {
+    display: none;
+}
+
+.section-third-advantages:hover {
+    background: linear-gradient(to bottom, #192783, #0557DA);
+}
+
+ .section-third-advantages:hover h3 {
+     color: white;
 }
 
 .section-third-advantages:nth-child(3) {
@@ -321,8 +355,37 @@ h3 {
     font-size: 100px;
 }
 
-.section-third h3 {
-    color: #262626;
+.section-third-advantages:hover .section-third-icon {
+    display: none;
+}
+
+.section-third-advantages:hover .s-3-more {
+    display: flex;
+    flex-direction: column;
+    width: 304px;
+}
+
+.s-3-more {
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4AB7FF;
+    text-decoration: none;
+}
+
+.section-third-advantages:hover li {
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.section-third-advantages:hover li:nth-child(2) {
+    opacity: .5;
+}
+.section-third-advantages:hover li:nth-child(3) {
+    opacity: .2;
 }
 
 .section-third-last-advantages {
@@ -386,8 +449,14 @@ h3 {
     padding: 16px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    border: none;
+    border: 1px solid #E7EFFA;
     width: 396px;
+    height: 60px;
+}
+
+.section-third-form input:hover {
+    box-sizing: border-box;
+    border: 1px solid #4AB7FF;
 }
 
 .btn-section-third {
@@ -404,6 +473,15 @@ h3 {
     font-weight: bold;
     font-size: 20px;
     line-height: 28px;
+    cursor: pointer;
+}
+
+.btn-section-third:hover {
+    background: linear-gradient(to right, #0B59D0, #4AB7FF);
+}
+
+.btn-section-third:active {
+    background: linear-gradient(to bottom, #192783, #0557DA);
 }
 
 .section-third-form {
@@ -471,6 +549,52 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     margin-right: 16px;
+    cursor: pointer;
+}
+
+.s-4-description,
+.s-4-more{
+    display: none;
+
+}
+
+.s-4-more,
+.s-6-more {
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #4AB7FF;
+    text-decoration: none;
+}
+
+.section-fourth-advantages:hover {
+    background: linear-gradient(to bottom, #192783, #0557DA);
+    padding-bottom: 26px;
+}
+
+.section-fourth-advantages:hover .s-4-description,
+.section-fourth-advantages:hover .s-4-more {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-fourth-advantages:hover .s-4-description {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-top: 16px;
+    background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, .5) 75%, rgba(255, 255, 255, .2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-fourth-advantages:hover .section-fourth-icon {
+    display: none;
 }
 
 .section-fourth-advantages:last-child {
@@ -524,6 +648,14 @@ h3 {
     border: 0;
     cursor: pointer;
     margin-top: 32px;
+}
+
+.btn-section-fourth:hover {
+    background: linear-gradient(to right bottom, #0B59D0, #4AB7FF);
+}
+
+.btn-section-fourth:active {
+    background: linear-gradient(to bottom, #192783, #0557DA);
 }
 
 .section-fourth-advantages h4 {
@@ -677,6 +809,34 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     padding: 32px 32px 32px 32px;
+}
+
+.s-6-more,
+.section-sixth-description-full,
+.section-sixth-advantages:hover .section-sixth-description,
+.section-sixth-advantages:hover .section-sixth-icon {
+    display: none;
+}
+
+.section-sixth-advantages:hover {
+    background: linear-gradient(to right bottom, #0B59D0, #4AB7FF);
+}
+
+.section-sixth-advantages:hover .s-6-more,
+.section-sixth-advantages:hover .section-sixth-description-full {
+    display: flex;
+}
+.section-sixth-description-full {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    margin-top: 16px;
+    background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, .5) 75%, rgba(255, 255, 255, .2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-sixth-advantages:last-child {
@@ -1398,6 +1558,33 @@ h3 {
         height: 48px;
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .btn-eight:hover {
+    background: linear-gradient(to right bottom, #0B59D0, #4AB7FF);
+    }
+
+    .s-8-modal {
+        background: linear-gradient(#192783, #0557DA);
+        position: absolute;
+        width: 1200px;
+        height: 912px;
+        top: 10px;
+        flex-direction: column;
+        padding: 109px 168px 200px 125px;
+    }
+
+    .section-eight-form {
+        width: 1200px;
+        height: 912px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-eight-form input {
+        width: 384px;
+        height: 48px;
+        margin-bottom: 44px;
     }
 
     .footer-wrapper {
@@ -2246,12 +2433,6 @@ h3 {
         justify-content: flex-end;
     }
 
-
-    /*.footer-info-group {
-        flex-direction: column;
-        justify-content: space-between;
-    }*/
-
     .footer-responsive-wrapper {
         display: flex;
         flex-direction: column;
@@ -2433,10 +2614,6 @@ h3 {
 
     .advantages-wrapper ul {
         padding-left: 0;
-    }
-
-    .s-2-list {
-        text-align: center;
     }
 
     .section-third {
@@ -2842,7 +3019,6 @@ h3 {
     .social {
         width: 260px;
         align-items: center;
-        order: 3;
     }
 
     .footer-icon-group {
