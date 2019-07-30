@@ -47,6 +47,18 @@
 
     </nav>
 
+    <section class="modal-presentation">
+        <div class="advantages-wrapper">
+            <div class="modal-title">
+                <h3>Посмотреть презентацию</h3>
+                <span class="presentation">Презентация MasterOPC с подробными техническими характеристиками.</span>
+            </div>
+        </div>
+        <div class="modal-icon icon-presentation">
+            <span class="icon-presentation"></span>
+        </div>
+    </section>
+
     <section class="modal">
         <button class="close" type="button">
             <span class="icon-close"></span>
@@ -492,28 +504,45 @@
     <button class="btn-eight" type="button">Задать вопрос</button>
 
 </section>
-<div class="s-8-modal">
-    <!--<span class="section-eight-questions">Остались вопросы?</span>-->
+
+<div class="s-8-modal" hidden>
+    <button class="modal-close" type="button">
+        <span class="icon-close"></span>
+    </button>
+
+    <span class="modal-eight-questions">Остались вопросы?</span>
 
     <form class="section-eight-form">
+        <label for="email" class="label-color color-email">e-mail</label>
         <input type="text" id="email" value="e-mail">
-        <label for="email">e-mail</label>
+        <label for="name" class="label-color color-name">Имя Фамилия</label>
         <input type="text" id="name" value="Имя Фамилия">
-        <label for="name">Имя Фамилия</label>
-        <input type="text" id="question" value="Ваш вопрос">
-        <label for="question"></label>
-        <textarea></textarea>
+        <label for="name" class="label-color">Ваш вопрос</label>
+        <textarea id="field-question" name="fields">Ваше обращение</textarea>
+
+        <div class="modal-wrapper">
+<div class="modal-test">
+            <div class="fields-group-modal">
+                <input type="checkbox" id="attachment">
+                <span class="icon-paperclip"></span>
+                <label for="attachment">Прикрепить файл</label>
+            </div>
+            <div class="fields-group-modal">
+                <input type="checkbox" id="block2">
+                <span class="icon-checkbox-full"></span>
+                <label for="block2" class="label-modal">Я ознакомился с </label>
+                <a href="#">Согласием на обработку персональных данных</a>
+                <!--<label for="block"></label>-->
+                <label for="block" class="label-modal">и даю </label>
+                <a href="#">согласие на обработку персональных данных</a>
+            </div>
+</div>
+            <button class="btn-modal" type="button">Отправить</button>
+        </div>
+
     </form>
 
-    <div class="fields-group">
-        <input type="checkbox" id="block2">
-        <span class="icon-s-2-checkbox"></span>
-        <label for="block2">Я ознакомился с </label>
-        <a href="#">Согласием на обработку персональных данных</a>
-        <label for="block"></label>
-        <label for="block" class="label-m">и даю </label>
-        <a href="#">согласие на обработку персональных данных</a>
-    </div>
+
 </div>
 
 <footer>
