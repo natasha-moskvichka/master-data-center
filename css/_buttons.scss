@@ -5,5 +5,35 @@ $width-normal: 204px;
 $width-small: 189px;
 $border-radius: 4px;
 $background-btn: #4AB7FF;
-$color: white;
+$color-white: white;
+$border-radius: 4px;
 
+.buttons {
+  background: $background-btn;
+  border-radius: $border-radius;
+  cursor: pointer;
+  color: $color-white;
+  border: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  justify-content: center;
+
+  .btn-section-second,
+  .btn-eight,
+  .btn-footer {
+    $width-large: 216px;
+    $height-normal: 60px;
+  }
+  .btn-section-third {
+    $width-normal: 204px;
+    $height-normal: 60px;
+  }
+  .btn-section-fourth {
+    $width-small: 189px;
+    $height-normal: 60px;
+  }
+
+}
