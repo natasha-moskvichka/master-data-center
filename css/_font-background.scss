@@ -1,0 +1,54 @@
+@import "colors";
+
+$font-size-h1: 80px;
+$font-size-h2: 36px;
+$font-size-h3: 32px;
+$font-size-h4: 24px;
+
+$font-size_input: 20px;
+
+$font-size_huge: 36px;
+$font-size_big: 24px;
+$font-size_normal: 16px;
+
+$line-height-h1: 80px;
+$line-height-h2-h3: 52px;
+$line-height-h4: 32px;
+
+$line-height_input: 28px;
+
+$line-height_huge: 52px;
+$line-height_big: 32px;
+$line-height_normal: 24px;
+$line-height_small: 16px;
+
+$font-weight_bold: bold;
+$font-weight_normal: normal;
+$font-style: normal;
+
+$font-family: Open Sans, sans-serif;
+
+.h1 {
+  color: $color-h1;
+  font-size: $font-size-h1;
+  line-height: $line-height-h1;
+  font-weight: $font-weight_bold;
+  font-style: $font-style;
+}
+
+.h2 {
+  color: $color-h2;
+  font-size: $font-size-h2;
+  line-height: $line-height-h2-h3;
+  font-weight: $font-weight_bold;
+  font-style: $font-style;
+}
+
+.h3 {
+  font-size: $font-size-h3;
+  line-height: $line-height-h2-h3;
+  font-weight: $font-weight_bold;
+  font-style: $font-style;
+}
+
+

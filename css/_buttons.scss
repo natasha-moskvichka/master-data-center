@@ -1,23 +1,29 @@
 $height-normal: 60px;
 $height-small: 48px;
+
 $width-large: 216px;
 $width-normal: 204px;
 $width-small: 189px;
+
 $border-radius: 4px;
+
 $background-btn: #4AB7FF;
+
 $color-white: white;
-$border-radius: 4px;
+
+$font-size-small: 16px;
+$font-size-normal: 20px;
+
+$line-height-normal: 28px;
+$line-height-small: 24px;
 
 .buttons {
   background: $background-btn;
-  border-radius: $border-radius;
+  border: 0;
   cursor: pointer;
   color: $color-white;
-  border: 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
   align-items: center;
   justify-content: center;
 
@@ -36,4 +42,12 @@ $border-radius: 4px;
     $height-normal: 60px;
   }
 
+}
+
+.buttons:hover {
+  background: linear-gradient(to right bottom, #0B59D0, #4AB7FF);
+}
+
+.buttons:active {
+  background: linear-gradient(to bottom, #192783, #0557DA);
 }
