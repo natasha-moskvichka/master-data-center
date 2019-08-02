@@ -1,0 +1,63 @@
+$width-modal_huge: 1200px;
+$height-modal_huge: 600px;
+
+$width-modal_normal: 912px;
+
+$width-modal_big: 768px;
+$height-modal_big: 660px;
+
+$width-modal: 576px;
+$height-modal: 400px;
+
+$width-icon_close: 24px;
+$height-icon_close: 24px;
+
+$background-modal-icon: #1C288F;
+$background-modal: #1C288F;
+
+$background-modal_dark: #192783;
+$background-modal_light: #0557DA;
+
+$color-modal_input: #262626;
+
+$font-size-modal: 16px;
+$line-height-modal: 24px;
+
+$color-modal_general: #262626;
+
+$color-modal_border: #4AB7FF;
+
+$color-links-modal_blue: #4AB7FF;
+
+.modal-s-1 {
+  width: $width-modal;
+  height: $height-modal;
+  background: linear-gradient(to bottom, $background-modal_dark, $background-modal_light);
+}
+
+.modal-s-3 {
+  width: $width-modal-huge;
+  height: $height-modal-huge;
+  background: linear-gradient(to bottom, $background-modal_dark, $background-modal_light);
+}
+
+.modal-s-4 {
+  width: $width-modal-normal;
+  height: $height-modal-huge;
+  background: linear-gradient(to bottom, $background-modal_dark, $background-modal_light);
+}
+
+.close {
+  width: $width-icon_close;
+  height: $height-icon_close;
+  border: 0;
+  cursor: pointer;
+  background: none;
+  position: absolute;
+}
+
+.modal {
+  width: $width-modal_big;
+  height: $height-modal_big;
+  background: $background-modal;
+}

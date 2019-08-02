@@ -1,15 +1,18 @@
-$width_icon_normal: 100px;
-$height_icon_normal: 100px;
+$width_icon_big: 100px;
+$height_icon_big: 100px;
 
+$width_icon_small: 72px;
 $height_icon_small: 72px;
-$height_icon_small: 72px;
+
+$font-size-icon_big: 100px;
+$font-size-icon_small: 72px;
 
 .icons-normal {
-  $width_icon_normal: 100px;
-  $height_icon_normal: 100px;
+  width: $width_icon_big;
+  height: $height_icon_big;
 }
 
 .icons-small {
-  $width_icon_small: 72px;
-  $height_icon_small: 72px;
+  width: $width_icon_small;
+  height: $height_icon_small;
 }

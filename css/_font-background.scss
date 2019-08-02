@@ -18,6 +18,7 @@ $line-height-h4: 32px;
 $line-height_input: 28px;
 
 $line-height_huge: 52px;
+$line-height-middle: 36px;
 $line-height_big: 32px;
 $line-height_normal: 24px;
 $line-height_small: 16px;
@@ -49,6 +50,14 @@ $font-family: Open Sans, sans-serif;
   line-height: $line-height-h2-h3;
   font-weight: $font-weight_bold;
   font-style: $font-style;
+}
+
+.h4 {
+  font-size: $font-size-h4;
+  line-height: $line-height-h4;
+  font-weight: $font-weight_bold;
+  font-style: $font-style;
+  color: $color-white;
 }
 
 
