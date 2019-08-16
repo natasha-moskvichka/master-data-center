@@ -614,7 +614,7 @@ h3 {
     height: $height-normal;
     border-radius: $border-radius;
     font-size: $font-size-normal;
-    font-weight: $line-height-normal;
+    line-height: $line-height-normal;
     margin-top: 32px;
   }
 
@@ -1878,7 +1878,7 @@ h3 {
   }
 }
 
-@media (max-width: 1023px) and (min-width: 840px) {
+@media (max-width: 1023px) and (min-width: 768px) {
   header {
     padding: 0 70px;
 
@@ -1904,8 +1904,7 @@ h3 {
   .section-second-wrapper,
   .wrapper-title,
   .s-2-wrapper {
-
-     width: 848px;
+    width: 848px;
 
     .section-second-advantages {
       width: 416px;
@@ -1915,6 +1914,7 @@ h3 {
     .last-advantages {
       flex: 0 0 848px;
     }
+
     .right-side {
       right: 0;
     }
@@ -2078,7 +2078,7 @@ h3 {
     height: 224px;
     padding: 32px 40px;
 
-     .logo {
+    .logo {
       width: 209px;
       height: 43px;
       margin-right: 26px;
@@ -2120,30 +2120,79 @@ h3 {
 
 }
 
-@media (max-width: 839px) and (min-width: 768px) {
+@media (max-width: 767px) and (min-width: 687px) {
+  header {
+    padding: 0 72px;
 
-    .section-first {
-      clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 300px), 270px calc(100vh - 223px), 0 calc(100vh - 280px));
-
+    .nav,
+    .nav-btn {
+      display: none;
     }
 
+    .icon-menu {
+      display: flex;
+    }
+  }
 
-  /*---Преимущества от внедрения---*/
+  .section-first {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 300px), 270px calc(100vh - 230px), 0 calc(100vh - 300px));
+
+    .section-first-wrapper {
+      margin: 150px 0 0 60px;
+    }
+  }
+
   /*---Преимущества от внедрения---*/
   .section-second-wrapper,
   .wrapper-title,
   .s-2-wrapper {
+    width: 768px;
 
-    width: 528px;
-  }
+    .h2 {
+      width: 768px;
+      font-size: 32px;
+      line-height: 48px;
+      text-align: center;
+    }
+
     .section-second-advantages {
       width: 528px;
       height: 400px;
+      margin: 0 auto;
     }
 
-    .last-advantages {
-      flex: 0 0 528px;
+    .advantages-wrapper ul {
+      height: 144px;
+      overflow: hidden;
+      padding-left: 15px;
     }
+
+    h3 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    .advantages-wrapper li:nth-child(n+2) {
+      opacity: .5;
+      color: white;
+    }
+
+    .advantages-wrapper li:nth-child(n+3) {
+      opacity: .2;
+      color: white;
+    }
+
+    .advantages-wrapper li:hover:nth-child(n+2) {
+      opacity: 1;
+      color: white;
+    }
+
+    .left-side {
+      width: 768px;
+      height: 400px;
+      text-align: center;
+    }
+
     .right-side {
       display: none;
     }
@@ -2152,12 +2201,906 @@ h3 {
       width: $width-small;
       height: $height-small;
     }
+  }
+  .section-second-last-advantages {
+    width: 768px;
+    height: 400px;
+  }
+
+  /*---Особенности MasterЦОД---*/
+  .section-third-wrapper {
 
 
+    .third-title {
+      width: 768px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .section-third {
+      width: 528px;
+      justify-content: center;
+    }
+
+    .section-third-advantages h3 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .section-third-advantages {
+      width: 256px;
+      height: 256px;
+      margin: 0 16px 16px 0;
+    }
+
+    .section-third-advantages:nth-child(3) {
+      margin-right: 16px;
+    }
+
+    .section-third-advantages:nth-child(even) {
+      margin-right: 0;
+    }
+
+    .section-third-icon {
+      width: $width_icon_small;
+      height: $height_icon_small;
+      font-size: $font-size-icon_small;
+    }
+
+    .section-third-last-advantages {
+      width: 768px;
+      height: 330px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 32px;
+
+    }
+
+    .third-left-side {
+      width: 528px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .third-right-side {
+      width: 528px;
+      margin: 0 auto;
+    }
+
+    .get-advice {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 16px;
+    }
+
+    .get-advice::after {
+      display: none;
+    }
+
+    .section-third-form {
+      justify-content: center;
+      margin-top: 32px;
+    }
+
+    .section-third-form input {
+      width: 254px;
+      height: 48px;
+      font-size: 16px;
+      line-height: 20px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    .btn-section-third {
+      width: 185px;
+      height: 48px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    .fields-group {
+      font-size: 12px;
+      line-height: 14px;
+      width: 384px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .label-m {
+      margin-left: 0;
+    }
+  }
+  .section-third-wrapper::before {
+    clip-path: polygon(0 30px, 92px 130px, 100% 30px, 100% 100%, 0 100%);
+  }
+
+  /*---Почему мы?---*/
+  .section-fourth {
+
+    margin: 0;
+
+    .section-fourth-wrapper,
+    .s-6-wrapper {
+      width: 528px;
+      justify-content: center;
+    }
+
+    .section-fourth-advantages {
+      width: 200px;
+      height: 200px;
+      padding: 48px 0 16px 32px;
+      margin-bottom: 16px;
+    }
+
+    .section-fourth-advantages h4 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .section-fourth-icon {
+      width: 56px;
+      height: 56px;
+      font-size: 56px;
+    }
+
+    .section-fourth-advantages:last-child {
+      margin-right: 16px;
+    }
+
+    .section-second-description {
+      color: $color-white;
+      margin-bottom: 32px;
+    }
+
+    .fourth-right-side {
+      display: none;
+    }
+
+    .fourth-left-side {
+      width: 768px;
+      text-align: center;
+    }
+
+    .section-fourth-last-advantages {
+      flex: 0 0 768px;
+    }
+
+    .btn-section-fourth {
+      height: 48px;
+      margin: 0 auto;
+    }
+
+    .fourth-last-advantages {
+      flex: 0 0 768px;
+    }
+  }
+
+  /*---Нам доверяют---*/
+  .section-fifth {
+    .w-h2 {
+      width: 768px;
+    }
+
+    .partner {
+      width: 25%;
+    }
+
+    .partner:nth-child(4),
+    .partner:nth-child(5) {
+      display: none;
+    }
+  }
+
+  /*---Внедрения---*/
+  .section-sixth-wrapper {
+
+    .sixth-title {
+      width: 768px;
+    }
+
+    .section-sixth-advantages {
+      width: 528px;
+      height: 528px;
+      padding-top: 18px;
+      margin-bottom: 16px;
+      margin-right: 0;
+    }
+
+    .icon-partner-one,
+    .icon-partner-three {
+      width: 203px;
+      margin: 56px 0 56px 0;
+    }
+
+    .icon-partner-two {
+      margin: 18px 24px 70px 24px;
+    }
+  }
+
+  /*---Что о нас говорят клиенты---*/
+  .section-seventh-wrapper {
+
+    .seventh-title {
+      width: 768px;
+    }
+
+    .section-seventh-general {
+      width: 768px;
+    }
+  }
+
+  /*---Остались вопросы?---*/
+  .section-eight {
+    width: 768px;
+    align-items: center;
+
+    .section-eight-title {
+      text-align: center;
+    }
+
+    .btn-eight {
+      width: 185px;
+      height: 48px;
+    }
+  }
+
+  /*---Footer---*/
+  .footer-wrapper {
+    width: 768px;
+    height: 232px;
+    padding: 36px 72px 44px 72px;
+
+    .logo {
+      width: 112px;
+      height: 26px;
+    }
+
+    .footer-info-group,
+    .footer-responsive-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .our-address,
+    .information {
+      width: 304px;
+    }
+
+    .information {
+      margin: 16px 0 32px 0;
+    }
+
+    .information a:hover {
+      text-decoration: underline;
+    }
+
+    .our-address,
+    .information a {
+      width: 304px;
+      color: $color-white;
+      text-decoration: none;
+      font-style: $font-style;
+      font-weight: $font-weight_normal;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+    .footer-phone,
+    .footer-mail,
+    .footer-address {
+      display: block;
+    }
+
+    .icon-footer-phone,
+    .icon-footer-envelope,
+    .icon-point,
+    .footer-visible-w-320 {
+      display: none;
+    }
+
+    .social {
+      width: 132px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .footer-icon-group {
+      width: 132px;
+      justify-content: space-evenly;
+    }
+
+    .icon-social {
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+    }
+
+    .footer-icon-group a {
+      text-decoration: none;
+    }
+
+    .btn-footer {
+      margin: 0 auto;
+      /*@extend .buttons;*/
+      width: 132px;
+      height: 40px;
+      font-size: 16px;
+      line-height: 20px;
+      border-radius: $border-radius;
+    }
+  }
+
+  .footer-copyright-wrapper {
+    display: none;
+  }
+
+  .footer-copyright {
+    padding: 10px 72px;
+    font-size: 8px;
+    line-height: 12px;
+
+    .footer-info {
+      width: 700px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-info a {
+      font-family: Open Sans, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 8px;
+      line-height: 12px;
+      text-decoration: none;
+      color: #373737;
+      margin-left: 0;
+    }
+  }
 
 }
 
+@media (max-width: 686px) and (min-width: 320px) {
+  header {
+    padding: 0 8px;
 
+    .phone,
+    .nav,
+    .nav-btn {
+      display: none;
+    }
+
+    .logo {
+      width: 112px;
+      height: 27px;
+    }
+
+    .icon-menu,
+    .icon-phone {
+      display: flex;
+
+    }
+  }
+
+  .section-first {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 468px), 115px calc(100vh - 399px), 0 calc(100vh - 470px));
+
+    .section-first-wrapper {
+      margin: 80px 8px 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    .section-first-description {
+      width: 340px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  /*---Преимущества от внедрения---*/
+  .section-second-wrapper,
+  .wrapper-title,
+  .s-2-wrapper {
+    width: 320px;
+
+    .h2 {
+      width: 320px;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .section-second-last-advantages {
+      height: 400px;
+    }
+
+    .section-second-advantages {
+      width: 320px;
+      height: 400px;
+      margin-bottom: 16px;
+    }
+
+    .advantages-wrapper ul {
+      height: 144px;
+      overflow: hidden;
+      text-align: center;
+      padding-left: 15px;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 48px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .advantages-wrapper {
+      width: 250px;
+    }
+
+    .advantages-wrapper li:nth-child(n+2) {
+      opacity: .5;
+      color: white;
+    }
+
+    .advantages-wrapper li:nth-child(n+3) {
+      opacity: .2;
+      color: white;
+    }
+
+    .advantages-wrapper li:hover:nth-child(n+2) {
+      opacity: 1;
+      color: white;
+    }
+
+    .s-2-list {
+      width: 250px;
+    }
+
+    .last-advantages {
+      flex: 0 0 320px;
+      height: 400px;
+    }
+
+    .left-side {
+      width: 320px;
+      height: 400px;
+      text-align: center;
+    }
+
+    .right-side {
+      display: none;
+    }
+
+    .btn-section-second {
+      width: $width-small;
+      height: $height-small;
+    }
+  }
+
+  /*---Особенности MasterЦОД---*/
+  .section-third-wrapper {
+
+    .third-title {
+      width: 320px;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .section-third {
+      width: 320px;
+      justify-content: center;
+    }
+
+    .section-third-advantages h3 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .section-third-advantages {
+      width: 256px;
+      height: 256px;
+     margin: 0 0 16px 0;
+    }
+
+    .section-third-icon {
+      width: $width_icon_small;
+      height: $height_icon_small;
+      font-size: $font-size-icon_small;
+    }
+
+    .section-third-last-advantages {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 32px;
+      padding: 56px 8px 0;
+    }
+
+    .third-left-side {
+      width: 320px;
+      text-align: center;
+    }
+
+    .third-right-side {
+      width: 320px;
+    }
+
+    .get-advice {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 16px;
+    }
+
+    .get-advice::after {
+      display: none;
+    }
+
+    .section-third-form {
+      flex-direction: column;
+      align-items: center;
+      width: 304px;
+      margin-top: 32px;
+    }
+
+    .section-third-form input {
+      width: 254px;
+      height: 48px;
+      font-size: 16px;
+      line-height: 20px;
+      border-radius: 4px;
+    }
+
+    .btn-section-third {
+      width: 185px;
+      height: 48px;
+      border-radius: 4px;
+      margin-top: 16px;
+    }
+
+    .fields-group {
+      font-size: 12px;
+      line-height: 14px;
+      width: 304px;
+      text-align: center;
+    }
+
+    .label-m {
+      margin-left: 0;
+    }
+  }
+  .section-third-wrapper::before {
+    clip-path: polygon(0 105px, 92px 130px, 100% 80px, 100% 100%, 0 100%);
+    padding-bottom: 684px;
+  }
+
+  /*---Почему мы?---*/
+  .section-fourth {
+
+
+    .section-fourth-wrapper,
+    .s-6-wrapper {
+      width: 320px;
+      justify-content: center;
+    }
+
+    .section-fourth-advantages {
+      width: 256px;
+      height: 256px;
+      padding: 48px 14px 16px 32px;
+      margin: 0 0 16px 0;
+    }
+
+    .section-fourth-advantages h4 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .section-fourth-icon {
+      width: 72px;
+      height: 72px;
+      font-size: 72px;
+    }
+
+    .fourth-last-advantages {
+      flex: 0 0 320px;
+      height: 400px;
+    }
+
+    .section-second-description {
+      color: $color-white;
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .fourth-right-side {
+      display: none;
+    }
+
+    .fourth-left-side h2 {
+      font-size: 36px;
+      line-height: 52px;
+      text-align: center;
+    }
+
+    .btn-section-fourth {
+      height: 48px;
+      align-self: center;
+    }
+  }
+
+  /*---Нам доверяют---*/
+  .section-fifth {
+    .w-h2 {
+      width: 320px;
+    }
+
+    .partner {
+      display: none;
+      padding-right: 0;
+    }
+
+    .partner:first-child {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  /*---Внедрения---*/
+  .section-sixth-wrapper {
+
+    .sixth-title {
+      width: 320px;
+    }
+
+    h2 {
+      margin: 0 auto;
+    }
+
+    .section-sixth {
+      margin-top: 48px;
+    }
+
+    .section-sixth-advantages {
+      width: 320px;
+      height: 400px;
+      padding: 56px 56px 64px;
+      margin-bottom: 16px;
+      margin-right: 0;
+    }
+
+    .icon-partner-one,
+    .icon-partner-three {
+      width: 203px;
+      margin: 0;
+    }
+
+    .icon-partner-two {
+      margin: 0;
+    }
+
+    .section-sixth-icon {
+      display: none;
+    }
+  }
+
+  .section-sixth-wrapper::before {
+    display: none;
+  }
+
+  /*---Что о нас говорят клиенты---*/
+  .section-seventh-wrapper {
+    .seventh-title {
+      width: 320px;
+      padding-top: 48px;
+    }
+
+    .seventh-title h2 {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      width: 320px;
+    }
+
+    .section-seventh-description {
+      width: 304px;
+      text-overflow: ellipsis;
+      height: 192px;
+    }
+
+    .section-seventh-general {
+      width: 320px;
+      padding: 56px 8px 26px;
+    }
+
+    .section-seventh-name {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    .section-seventh-title-partner {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .section-seventh-pagination {
+      justify-content: space-evenly;
+      font-size: 12px;
+    }
+
+    .section-seventh::before {
+      display: none;
+    }
+  }
+
+  /*---Остались вопросы?---*/
+  .section-eight {
+    width: 320px;
+    height: 400px;
+    justify-content: start;
+    background: url(./../img/s2-background.png) no-repeat center, linear-gradient(to bottom right, #0B59D0, #4AB7FF);
+
+    .s-8-color {
+      color: $color-white;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .section-eight-title {
+      width: 260px;
+      text-align: center;
+      margin: 16px 0 32px;
+    }
+
+    .btn-eight {
+      width: 185px;
+      height: 48px;
+      margin: 0 auto;
+    }
+  }
+
+  /*---Footer---*/
+  .footer-wrapper {
+    flex-direction: column;
+    width: 320px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 19px 8px 48px 8px;
+    justify-content: start;
+
+    .logo {
+      width: 112px;
+      height: 26px;
+      margin-bottom: 33px;
+    }
+
+    .footer-info-group,
+    .footer-responsive-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .our-address,
+    .information {
+      width: 304px;
+    }
+
+    .information {
+      margin: 16px 0 32px 0;
+    }
+
+    .information a:hover {
+      text-decoration: underline;
+    }
+
+    .our-address,
+    .information a {
+      width: 304px;
+      color: $color-white;
+      text-decoration: none;
+      font-style: $font-style;
+      font-weight: $font-weight_normal;
+      font-size: 14px;
+      line-height: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+    .footer-phone,
+    .footer-mail,
+    .footer-address {
+      display: block;
+    }
+
+    .icon-footer-phone,
+    .icon-footer-envelope,
+    .icon-point,
+    .footer-visible-w-320 {
+      display: none;
+    }
+
+    .social {
+      width: 304px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-icon-group {
+      width: 304px;
+      justify-content: space-evenly;
+    }
+
+    .icon-social {
+      width: 40px;
+      height: 40px;
+      font-size: 40px;
+    }
+
+    .footer-icon-group a {
+      text-decoration: none;
+    }
+
+    .btn-footer {
+      margin: 0 auto;
+      @extend .buttons;
+      width: $width-large;
+      height: $height-normal;
+      font-size: 20px;
+      line-height: 28px;
+      border-radius: $border-radius;
+    }
+  }
+
+  .footer-copyright-wrapper {
+    display: none;
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    width: 320px;
+    height: 97px;
+    margin: 0 auto;
+    padding: 16px 8px 9px;
+
+    .footer-info {
+      width: 304px;
+      display: flex;
+      flex-direction: column;
+      height: 97px;
+      justify-content: space-between;
+    }
+
+    .footer-info a {
+      font-family: Open Sans, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      text-decoration: none;
+      color: #373737;
+      margin-left: 0;
+    }
+  }
+}
 
 
 
