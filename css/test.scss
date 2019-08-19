@@ -338,10 +338,15 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 304px;
+    justify-content: flex-end;
   }
 
-  .s-3-more {
-    /*font-family: PT Sans, sans-serif;*/
+  .section-third-advantages:hover a:hover {
+    text-decoration: underline;
+  }
+
+  .s-3-more-link {
+    display: none;
     font-style: $font-style;
     font-weight: $font-weight_bold;
     font-size: $font-size_normal;
@@ -485,7 +490,7 @@ h3 {
 .section-third-wrapper::before {
   content: "";
   position: absolute;
-  padding-bottom: 279px;
+  padding-bottom: 600px;
   background: url(./../img/s3-background.png) no-repeat right, linear-gradient(to bottom, $color-gradient_super-dark, $color-gradient_light);
   clip-path: polygon(0 0, 420px 80px, 100% 0, 100% 1178px, 420px 1247px, 0 1178px, 0 100%);
   width: 100%;
@@ -574,6 +579,10 @@ h3 {
     margin-right: 0;
   }
 
+  .section-fourth-advantages:hover a:hover {
+    text-decoration: underline;
+  }
+
   .section-fourth-icon {
     display: flex;
     width: 72px;
@@ -597,6 +606,10 @@ h3 {
     flex: 0 0 1168px;
     position: relative;
     margin: 0 auto;
+  }
+
+  .section-fourth-description {
+    color: $color-white;
   }
 
   .fourth-right-side {
@@ -625,7 +638,8 @@ h3 {
   .fourth-left-side {
     display: flex;
     flex-direction: column;
-    margin: 56px 32px;
+    padding: 56px 32px;
+    width: 400px;
   }
 
   .fourth-left-side h2 {
@@ -771,6 +785,21 @@ h3 {
   .section-sixth-advantages:hover .s-6-more,
   .section-sixth-advantages:hover .section-sixth-description-full {
     display: flex;
+  }
+
+  .section-sixth-description-full {
+    height: 192px;
+  }
+
+  .section-sixth-advantages:hover a {
+    color: $color-links_blue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .section-sixth-advantages:hover a:hover {
+  text-decoration: underline;
+    font-weight: bold;
   }
 
   .section-sixth-description-full {
@@ -949,6 +978,10 @@ h3 {
     line-height: 16px;
     color: #4AB7FF;
     text-decoration: none;
+  }
+
+  .feedback:hover {
+    text-decoration: underline;
   }
 
   /*.toggle {
@@ -1710,6 +1743,14 @@ h3 {
       height: 272px;
     }
 
+    .section-third-advantages:hover .s-3-more {
+      display: none;
+    }
+
+    .section-third-advantages:hover ul {
+      height: 50px;
+    }
+
     .section-third-icon {
       width: $width_icon_small;
       height: $height_icon_small;
@@ -1754,7 +1795,13 @@ h3 {
     .section-fourth-advantages {
       width: 200px;
       height: 200px;
-      padding: 48px 0 16px 32px;
+      padding: 48px 16px 32px;
+    }
+
+    .section-fourth-advantages:hover .s-4-description {
+      width: 165px;
+      height: 50px;
+      margin-top: 0;
     }
 
     .section-fourth-advantages h4 {
@@ -1790,6 +1837,14 @@ h3 {
     .partner:nth-child(5) {
       display: none;
     }
+
+    .w-h2 {
+      width: 848px;
+      justify-content: flex-start;
+    }
+  }
+  .section-fifth {
+    justify-content: space-evenly;
   }
 
   /*---Внедрения---*/
@@ -1816,7 +1871,9 @@ h3 {
     }
   }
 
-  /*---Что о нас говорят клиенты---*/
+
+
+    /*---Что о нас говорят клиенты---*/
   .section-seventh-wrapper {
 
     .seventh-title {
@@ -1878,7 +1935,7 @@ h3 {
   }
 }
 
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 1023px) and (min-width: 870px) {
   header {
     padding: 0 70px;
 
@@ -1911,12 +1968,20 @@ h3 {
       height: 400px;
     }
 
+    .advantages-wrapper {
+      width: 352px;
+    }
+
     .last-advantages {
       flex: 0 0 848px;
     }
 
     .right-side {
       right: 0;
+    }
+
+    .left-side {
+      width: 423px;
     }
 
     .btn-section-second {
@@ -1944,6 +2009,14 @@ h3 {
     .section-third-advantages {
       width: 272px;
       height: 272px;
+    }
+
+    .section-third-advantages:hover .s-3-more {
+      display: none;
+    }
+
+    .section-third-advantages:hover .s-3-more-link {
+      display: flex;
     }
 
     .section-third-icon {
@@ -1985,6 +2058,7 @@ h3 {
     .section-fourth-wrapper,
     .s-6-wrapper {
       width: 848px;
+
     }
 
     .section-fourth-advantages {
@@ -2008,12 +2082,22 @@ h3 {
       flex: 0 0 848px;
     }
 
-    .section-second-description {
-      color: $color-white;
+    .section-fourth-advantages:hover .s-4-description {
+      width: 165px;
+      height: 50px;
+      margin-top: 0;
     }
 
     .fourth-right-side {
       right: 0;
+    }
+
+    .fourth-left-side {
+      width: 423px;
+    }
+
+    .btn-section-fourth {
+      height: 48px;
     }
   }
 
@@ -2021,11 +2105,17 @@ h3 {
   .section-fifth {
     .w-h2 {
       width: 848px;
+      justify-content: flex-start;
     }
 
     .partner:nth-child(5) {
       display: none;
     }
+
+  }
+
+  .section-fifth-wrapper {
+    justify-content: space-evenly;
   }
 
   /*---Внедрения---*/
@@ -2120,9 +2210,9 @@ h3 {
 
 }
 
-@media (max-width: 767px) and (min-width: 687px) {
+@media (max-width: 869px) and (min-width: 768px) {
   header {
-    padding: 0 72px;
+    padding: 0 70px;
 
     .nav,
     .nav-btn {
@@ -2135,10 +2225,10 @@ h3 {
   }
 
   .section-first {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 300px), 270px calc(100vh - 230px), 0 calc(100vh - 300px));
+    clip-path: polygon(0 0, 100% 0, 100% calc(100vh - 284px), 270px calc(100vh - 202px), 0 calc(100vh - 280px));
 
     .section-first-wrapper {
-      margin: 150px 0 0 60px;
+      margin: 216px 0 0 120px;
     }
   }
 
@@ -2201,6 +2291,10 @@ h3 {
       width: $width-small;
       height: $height-small;
     }
+
+    .last-advantages {
+      flex: 0 0 768px;
+    }
   }
   .section-second-last-advantages {
     width: 768px;
@@ -2210,15 +2304,13 @@ h3 {
   /*---Особенности MasterЦОД---*/
   .section-third-wrapper {
 
-
     .third-title {
-      width: 768px;
+      width: 528px;
     }
 
     h2 {
-      font-size: 24px;
-      line-height: 32px;
-      text-align: center;
+      font-size: 32px;
+      line-height: 48px;
     }
 
     .section-third {
@@ -2235,6 +2327,14 @@ h3 {
       width: 256px;
       height: 256px;
       margin: 0 16px 16px 0;
+    }
+
+    .section-third-advantages:hover .s-3-more {
+      display: none;
+    }
+
+    .section-third-advantages:hover .s-3-more-link {
+      display: flex;
     }
 
     .section-third-advantages:nth-child(3) {
@@ -2316,12 +2416,12 @@ h3 {
   }
   .section-third-wrapper::before {
     clip-path: polygon(0 30px, 92px 130px, 100% 30px, 100% 100%, 0 100%);
+    padding-bottom: 373px;
   }
 
   /*---Почему мы?---*/
   .section-fourth {
-
-    margin: 0;
+    margin-top: 83px;
 
     .section-fourth-wrapper,
     .s-6-wrapper {
@@ -2332,8 +2432,12 @@ h3 {
     .section-fourth-advantages {
       width: 200px;
       height: 200px;
-      padding: 48px 0 16px 32px;
+      padding: 48px 60px 16px 32px;
       margin-bottom: 16px;
+    }
+
+    .section-fourth-advantages:hover .s-4-description {
+      display: none;
     }
 
     .section-fourth-advantages h4 {
@@ -2347,8 +2451,8 @@ h3 {
       font-size: 56px;
     }
 
-    .section-fourth-advantages:last-child {
-      margin-right: 16px;
+    .section-fourth-advantages:nth-child(even) {
+      margin-right: 0;
     }
 
     .section-second-description {
@@ -2399,7 +2503,7 @@ h3 {
   .section-sixth-wrapper {
 
     .sixth-title {
-      width: 768px;
+      width: 528px;
     }
 
     .section-sixth-advantages {
@@ -2420,31 +2524,44 @@ h3 {
       margin: 18px 24px 70px 24px;
     }
   }
+  .section-sixth-wrapper::before {
+    height: 1690px;
+  }
 
   /*---Что о нас говорят клиенты---*/
   .section-seventh-wrapper {
 
     .seventh-title {
-      width: 768px;
+      width: 528px;
     }
 
     .section-seventh-general {
-      width: 768px;
+      width: 528px;
     }
   }
 
   /*---Остались вопросы?---*/
   .section-eight {
     width: 768px;
-    align-items: center;
+    height: 320px;
+    margin-bottom: 48px;
+
+    .s-8-color {
+      color: $color-white;
+      margin-bottom: 0;
+      text-align: center;
+    }
 
     .section-eight-title {
+      width: 260px;
       text-align: center;
+      margin: 16px 0 32px;
     }
 
     .btn-eight {
       width: 185px;
       height: 48px;
+      margin: 0 auto;
     }
   }
 
@@ -2452,11 +2569,14 @@ h3 {
   .footer-wrapper {
     width: 768px;
     height: 232px;
-    padding: 36px 72px 44px 72px;
+    margin: 0 auto;
+    padding: 36px 72px 44px;
+
 
     .logo {
       width: 112px;
       height: 26px;
+      margin-bottom: 33px;
     }
 
     .footer-info-group,
@@ -2529,7 +2649,7 @@ h3 {
 
     .btn-footer {
       margin: 0 auto;
-      /*@extend .buttons;*/
+
       width: 132px;
       height: 40px;
       font-size: 16px;
@@ -2543,14 +2663,15 @@ h3 {
   }
 
   .footer-copyright {
+    width: 768px;
+    height: 32px;
+    margin: 0 auto;
     padding: 10px 72px;
     font-size: 8px;
     line-height: 12px;
 
     .footer-info {
-      width: 700px;
       display: flex;
-      justify-content: space-between;
     }
 
     .footer-info a {
@@ -2564,10 +2685,9 @@ h3 {
       margin-left: 0;
     }
   }
-
 }
 
-@media (max-width: 686px) and (min-width: 320px) {
+ @media (max-width: 767px) and (min-width: 320px) {
   header {
     padding: 0 8px;
 
@@ -2720,6 +2840,14 @@ h3 {
      margin: 0 0 16px 0;
     }
 
+    .section-third-advantages:hover .s-3-more {
+      display: none;
+    }
+
+    .section-third-advantages:hover .s-3-more-link {
+      display: flex;
+    }
+
     .section-third-icon {
       width: $width_icon_small;
       height: $height_icon_small;
@@ -2839,6 +2967,10 @@ h3 {
       font-size: 36px;
       line-height: 52px;
       text-align: center;
+    }
+
+    .fourth-left-side {
+      width: 320px;
     }
 
     .btn-section-fourth {
