@@ -122,9 +122,11 @@
 }
 .icon-toggle-next:before {
     content: "\e90e";
+    color: #4AB7FF;
 }
 .icon-toggle-prev:before {
     content: "\e90f";
+    color: #4AB7FF;
 }
 .icon-user:before {
     content: "\e910";

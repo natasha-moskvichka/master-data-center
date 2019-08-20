@@ -598,7 +598,7 @@
 
 <!--Нам доверяют-->
 <section class="section-fifth">
-    <div class="section-fifth-wrapper w-h2">
+    <div class="<!--section-fifth-wrapper--> w-h2">
         <h2>Нам доверяют</h2>
     </div>
 
@@ -606,6 +606,7 @@
         <!--<button type="button" class="section-fifth-toggle section-fifth-toggle-left">
             <span class="icon-toggle-prev"></span>
         </button>-->
+
         <div class="partner">
             <img src="./img/Иркутскэнерго.png" alt="Иркутскэнерго">
         </div>
@@ -621,7 +622,7 @@
         <div class="partner">
             <img src="./img/Мосэнергосбыт.png" alt="Мосэнергосбыт">
         </div>
-        <!--<button type="button" class="section-fifth-toggle section-fifth-toggle-right">
+       <!-- <button type="button" class="section-fifth-toggle section-fifth-toggle-right">
             <span class="icon-toggle-next"></span>
         </button>-->
     </div>
@@ -694,7 +695,7 @@
 <!--Что о нас говорят клиенты-->
 <section class="section-seventh-wrapper">
 
-    <button type="button" class="section-seventh-toggle section-seventh-toggle-left" hidden>
+    <button type="button" id="slide-left" class="slider-arrow slider-left section-seventh-toggle section-seventh-toggle-left">
         <span class="icon-toggle-prev"></span>
     </button>
 
@@ -702,6 +703,7 @@
         <div class="seventh-title title-p-t">
             <h2>Что о нас говорят клиенты</h2>
         </div>
+
         <div class="section-seventh-general">
             <div class="seventh-test">
                 <span class="section-seventh-name">Сальников С. В.</span>
@@ -725,7 +727,7 @@
             </div>
         </div>
         <div class="section-seventh-general">
-            <div class="seventh-test">
+            <div class="seventh-test slide">
                 <span class="section-seventh-name">Оленников И. В.</span>
                 <span class="section-seventh-title-partner">Руководитель ОЭЗ ТРТ &quot;Байкальская Гавань&quot;</span>
                 <p class="section-seventh-description">На территории ОЭЗ ТРТ "Байкальская гавань" в 2011 году сдана в
@@ -786,6 +788,7 @@
                     (г. Балаково, Саратовская обл.) работает комплексная автоматизированная система коммерческого и
                     технического учета ресурсов, реализованная на базе ПО MasterSCADA, производства ООО &quot;ИнСАТ&quot;.
                     Система предназначена для сбора, обработки и предоставления различным службам предприятия</p>
+                <a href="#" class="feedback">Посмотреть отзыв полностью</a>
             </div>
             <div class="section-seventh-pagination">
                 <span class="icon-s-7-pagination_white"></span>
@@ -796,7 +799,7 @@
             </div>
         </div>
     </div>
-    <button type="button" class="section-seventh-toggle section-seventh-toggle-right" hidden>
+    <button type="button" id="slide-right" class="slider-arrow slider-right section-seventh-toggle section-seventh-toggle-right">
         <span class="icon-toggle-next"></span>
     </button>
 
@@ -927,6 +930,6 @@
     </div>
 </div>
 
-
+<script src="js/script.js"></script>
 </body>
 </html>

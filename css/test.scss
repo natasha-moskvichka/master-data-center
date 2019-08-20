@@ -187,6 +187,7 @@ h3 {
     background: linear-gradient(to bottom, $color-gradient_super-dark, $color-gradient_light);
   }
 
+  .section-second-advantages:hover .advantages-wrapper li:nth-child(n+2),
   .section-second-advantages:hover .advantages-wrapper li:nth-child(n+3),
   .section-second-advantages:hover .advantages-wrapper li:nth-child(n+4) {
     opacity: 1;
@@ -226,9 +227,10 @@ h3 {
   }
 
   .left-side {
+    width: 408px;
     display: flex;
     flex-direction: column;
-    padding: 56px 32px;
+    padding: 56px 0 72px 32px;
   }
 
   .right-side {
@@ -353,6 +355,10 @@ h3 {
     line-height: $line-height_small;
     color: $color-links_blue;
     text-decoration: none;
+  }
+
+  .section-third-advantages:hover .s-3-more-link {
+    display: flex;
   }
 
   .section-third-advantages:hover li {
@@ -636,10 +642,10 @@ h3 {
   }
 
   .fourth-left-side {
+    width: 400px;
     display: flex;
     flex-direction: column;
-    padding: 56px 32px;
-    width: 400px;
+    padding: 56px 0 72px 32px;
   }
 
   .fourth-left-side h2 {
@@ -676,6 +682,7 @@ h3 {
 
   .w-h2 {
     width: 1168px;
+    margin: 0 auto;
   }
 
   .section-fifth-toggle {
@@ -686,16 +693,21 @@ h3 {
     display: flex;
     border: 0;
     position: absolute;
-    color: $color-general;
     opacity: .2;
+    cursor: pointer;
   }
 
   .section-fifth-toggle-left {
-    left: -218px;
+    left: -210px;
+  }
+
+  .section-fifth-toggle-left:hover,
+  .section-fifth-toggle-right:hover {
+    opacity: 1;
   }
 
   .section-fifth-toggle-right {
-    right: -218px;
+    right: -210px;
   }
 
   .section-seventh-toggle-left,
@@ -913,11 +925,11 @@ h3 {
     margin: 0 auto;
   }
 
-  .section-seventh-general:nth-child(n+3) {
+ /* .section-seventh-general:nth-child(n+3) {
     display: none;
-  }
+  }*/
 
-  .seventh-test {
+    .seventh-test {
     display: flex;
     flex-direction: column;
   }
@@ -993,8 +1005,36 @@ h3 {
   }
 
   .toggle-block > input[type=radio] {
-    visibility: hidden;
+    visibility: visible;
   }*/
+
+  .section-seventh-toggle-left,
+  .section-seventh-toggle-right {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border: 0;
+    font-size: 37px;
+    position: absolute;
+    z-index: 99;
+    background: $background-toggle;
+    opacity: .5;
+  }
+
+  .section-seventh-toggle-left:hover,
+  .section-seventh-toggle-right:hover {
+    opacity: 1;
+  }
+
+  .section-seventh-toggle-left {
+    left: 20px;
+    top: 59%;
+  }
+
+  .section-seventh-toggle-right {
+    right: 20px;
+    top: 59%;
+  }
 
 }
 
@@ -2058,13 +2098,16 @@ h3 {
     .section-fourth-wrapper,
     .s-6-wrapper {
       width: 848px;
-
     }
 
     .section-fourth-advantages {
       width: 200px;
       height: 200px;
       padding: 48px 0 16px 32px;
+    }
+
+    .section-fourth-advantages:hover .s-4-description {
+      display: none;
     }
 
     .section-fourth-advantages h4 {
@@ -2170,7 +2213,7 @@ h3 {
 
     .logo {
       width: 209px;
-      height: 43px;
+      height: 50px;
       margin-right: 26px;
     }
 
@@ -2251,6 +2294,14 @@ h3 {
       margin: 0 auto;
     }
 
+    .section-second-advantages + .section-second-advantages {
+      margin-bottom: 16px;
+    }
+
+    .section-second-advantages:last-child {
+      margin-bottom: 0;
+    }
+
     .advantages-wrapper ul {
       height: 144px;
       overflow: hidden;
@@ -2272,15 +2323,11 @@ h3 {
       color: white;
     }
 
-    .advantages-wrapper li:hover:nth-child(n+2) {
-      opacity: 1;
-      color: white;
-    }
-
     .left-side {
-      width: 768px;
-      height: 400px;
+      width: 528px;
       text-align: center;
+      padding: 56px 32px 72px;
+      margin: 0 auto;
     }
 
     .right-side {
@@ -2298,8 +2345,10 @@ h3 {
   }
   .section-second-last-advantages {
     width: 768px;
-    height: 400px;
+    height: 320px;
+    margin-bottom: 0;
   }
+
 
   /*---Особенности MasterЦОД---*/
   .section-third-wrapper {
@@ -2455,7 +2504,7 @@ h3 {
       margin-right: 0;
     }
 
-    .section-second-description {
+    .section-fourth-description {
       color: $color-white;
       margin-bottom: 32px;
     }
@@ -2465,12 +2514,15 @@ h3 {
     }
 
     .fourth-left-side {
-      width: 768px;
+      width: 528px;
       text-align: center;
+      padding: 56px 32px 72px;
+      margin: 0 auto;
     }
 
     .section-fourth-last-advantages {
       flex: 0 0 768px;
+      height: 320px;
     }
 
     .btn-section-fourth {
@@ -2486,9 +2538,13 @@ h3 {
   /*---Нам доверяют---*/
   .section-fifth {
     .w-h2 {
-      width: 768px;
+      width: 528px;
+      margin: 0 auto;
     }
+  }
 
+  .section-fifth-wrapper {
+    justify-content: space-evenly;
     .partner {
       width: 25%;
     }
@@ -2498,6 +2554,7 @@ h3 {
       display: none;
     }
   }
+
 
   /*---Внедрения---*/
   .section-sixth-wrapper {
@@ -2536,7 +2593,7 @@ h3 {
     }
 
     .section-seventh-general {
-      width: 528px;
+      width: 768px;
     }
   }
 
@@ -2555,7 +2612,7 @@ h3 {
     .section-eight-title {
       width: 260px;
       text-align: center;
-      margin: 16px 0 32px;
+      margin: 0 auto;
     }
 
     .btn-eight {
@@ -2570,8 +2627,7 @@ h3 {
     width: 768px;
     height: 232px;
     margin: 0 auto;
-    padding: 36px 72px 44px;
-
+    padding: 32px 40px;
 
     .logo {
       width: 112px;
@@ -2666,12 +2722,14 @@ h3 {
     width: 768px;
     height: 32px;
     margin: 0 auto;
-    padding: 10px 72px;
+    padding: 9px 40px;
     font-size: 8px;
     line-height: 12px;
 
     .footer-info {
+      width: 768px;
       display: flex;
+      justify-content: space-between;
     }
 
     .footer-info a {
@@ -2682,12 +2740,15 @@ h3 {
       line-height: 12px;
       text-decoration: none;
       color: #373737;
-      margin-left: 0;
+    }
+
+    .footer-visible-w-320 {
+      margin-right: 97px;
     }
   }
 }
 
- @media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) and (min-width: 320px) {
   header {
     padding: 0 8px;
 
@@ -2723,10 +2784,11 @@ h3 {
     }
 
     .section-first-description {
-      width: 340px;
+      width: 304px;
       text-align: center;
       font-size: 14px;
       line-height: 20px;
+      margin: 0 auto;
     }
   }
 
@@ -2793,6 +2855,7 @@ h3 {
     .last-advantages {
       flex: 0 0 320px;
       height: 400px;
+      background: url("./../img/s2-background.png") no-repeat center, linear-gradient(to bottom right, #0B59D0, #4AB7FF);
     }
 
     .left-side {
@@ -2837,7 +2900,7 @@ h3 {
     .section-third-advantages {
       width: 256px;
       height: 256px;
-     margin: 0 0 16px 0;
+      margin: 0 0 16px 0;
     }
 
     .section-third-advantages:hover .s-3-more {
@@ -2859,21 +2922,24 @@ h3 {
       display: flex;
       flex-direction: column;
       margin-top: 32px;
-      padding: 56px 8px 0;
+      padding: 56px 8px 48px;
+      height: 456px;
+      background: antiquewhite;
+      justify-content: start;
     }
 
     .third-left-side {
-      width: 320px;
+      width: 304px;
       text-align: center;
     }
 
     .third-right-side {
-      width: 320px;
+      width: 304px;
     }
 
     .get-advice {
-      font-size: 32px;
-      line-height: 48px;
+      font-size: 36px;
+      line-height: 52px;
       margin-bottom: 16px;
     }
 
@@ -2922,6 +2988,7 @@ h3 {
   /*---Почему мы?---*/
   .section-fourth {
 
+    margin-top: 48px;
 
     .section-fourth-wrapper,
     .s-6-wrapper {
@@ -2941,6 +3008,10 @@ h3 {
       line-height: 32px;
     }
 
+    .section-fourth-advantages:hover .s-4-description {
+      display: none
+    }
+
     .section-fourth-icon {
       width: 72px;
       height: 72px;
@@ -2948,6 +3019,7 @@ h3 {
     }
 
     .fourth-last-advantages {
+      background: url(./../img/s2-background.png) no-repeat center, linear-gradient(to bottom right, #0B59D0, #4AB7FF);
       flex: 0 0 320px;
       height: 400px;
     }
@@ -2970,7 +3042,10 @@ h3 {
     }
 
     .fourth-left-side {
-      width: 320px;
+      width: 240px;
+      padding: 56px 8px 72px;
+      text-align: center;
+      margin: 0 auto;
     }
 
     .btn-section-fourth {
@@ -2983,6 +3058,7 @@ h3 {
   .section-fifth {
     .w-h2 {
       width: 320px;
+      margin: 0 auto;
     }
 
     .partner {
@@ -3017,6 +3093,10 @@ h3 {
       padding: 56px 56px 64px;
       margin-bottom: 16px;
       margin-right: 0;
+    }
+
+    .section-sixth-advantages:hover .section-sixth-description-full {
+      display: none;
     }
 
     .icon-partner-one,
@@ -3071,6 +3151,8 @@ h3 {
     .section-seventh-title-partner {
       font-size: 24px;
       line-height: 32px;
+      width: 304px;
+      word-break: break-all;
     }
 
     .section-seventh-pagination {
